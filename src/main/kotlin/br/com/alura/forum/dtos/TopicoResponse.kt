@@ -11,7 +11,7 @@ data class TopicoResponse(
     val dataCriacao: LocalDateTime
 )
 
-data class RespotaTopicoResponse(
+data class RespostaTopicoResponse(
     val id: Long?,
     val mensagem: String,
     val dataCriacao: LocalDateTime,

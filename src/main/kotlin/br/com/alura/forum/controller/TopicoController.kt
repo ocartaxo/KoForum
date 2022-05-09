@@ -1,6 +1,6 @@
 package br.com.alura.forum.controller
 
-import br.com.alura.forum.dtos.RespotaTopicoResponse
+import br.com.alura.forum.dtos.RespostaTopicoResponse
 import br.com.alura.forum.dtos.TopicoRequest
 import br.com.alura.forum.dtos.TopicoResponse
 import br.com.alura.forum.dtos.TopicoUpdate
@@ -31,7 +31,7 @@ class TopicoController(private val service: TopicoService) {
     @GetMapping("/{id}/respostas")
     fun buscaRespostas(
         @PathVariable id: Long
-    ): List<RespotaTopicoResponse> {
+    ): List<RespostaTopicoResponse> {
         return service.buscaRespostas(id)
     }
 
